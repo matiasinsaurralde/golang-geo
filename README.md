@@ -28,7 +28,7 @@ You can read the documentation [here](http://godoc.org/github.com/kellydunn/gola
 
 Import from github to get started!
 
-```
+```go
 package main
 
 import("github.com/kellydunn/golang-geo"
@@ -66,7 +66,7 @@ That being said, `geo.HandleWithSQL` is configured to connect to a SQL database 
 Here are some examples of valid config files that golang-geo knows how to process:
 
 ##### PostgreSQL
-```
+```yaml
 development:
   driver: postgres
   openStr: user=username password=password dbname=points sslmode=disable
@@ -76,7 +76,7 @@ development:
 ```
 
 ##### MySQL
-```
+```yaml
 development:
   driver: mysql
   openStr: points/username/password
